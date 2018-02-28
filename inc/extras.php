@@ -57,6 +57,7 @@ add_filter( 'enter_title_here', 'qod_change_title_here_text');
  * Filter the Post Archive & front-page
  */
 function qod_modify_archives( $query ) {
+    // d($query);
     if( ( is_home() || is_single() ) && !is_admin() && $query->is_main_query() ){
         $query->set( 'orderby', 'rand' );
         $query->set( 'order', 'ASC');    
@@ -68,4 +69,3 @@ function qod_modify_archives( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'qod_modify_archives');
-    // d($query)
