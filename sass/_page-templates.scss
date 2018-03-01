@@ -17,7 +17,11 @@
     display: block;
     width: 300px;
     @media screen and (min-width: 620px) {
-        width: 500px
+        width: 500px;
+    }
+    @media screen and (min-width: 1080px) {
+        width: 700px;
+        margin: 0 auto;
     }
 }
 
@@ -29,6 +33,9 @@
         flex-wrap: wrap;
         @media screen and (min-width: 620px) {
             flex-wrap: nowrap;
+        }
+        @media screen and (min-width: 1080px) {
+            justify-content: flex-end;
         }
         p {
             flex: 0 1 100%;

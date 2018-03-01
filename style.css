@@ -605,6 +605,9 @@ a {
   @media screen and (min-width: 620px) {
     .home.blog .entry-content p {
       font-size: 1.75rem; } }
+  @media screen and (min-width: 1080px) {
+    .home.blog .entry-content p {
+      font-size: 2.5rem; } }
 
 .home.blog .entry-meta {
   margin-bottom: 3rem; }
@@ -616,6 +619,28 @@ a {
   .home.blog .entry-meta .source {
     font-style: italic;
     font-size: 1.25rem; }
+
+@media (min-width: 1080px) {
+  .home.blog .site-content {
+    margin: 5rem 10rem 2rem;
+    position: relative; }
+    .home.blog .site-content #new-quote-button {
+      display: block;
+      margin: 0 auto; }
+  .site-content:before,
+  .site-content:after {
+    font-family: FontAwesome;
+    color: #0c0;
+    font-size: 7rem;
+    line-height: 7rem;
+    position: absolute;
+    top: 0; }
+  .site-content:before {
+    content: "\f10d";
+    left: -10rem; }
+  .site-content:after {
+    content: "\f10e";
+    right: -10rem; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -652,6 +677,10 @@ object {
   @media screen and (min-width: 620px) {
     .logo img {
       width: 500px; } }
+  @media screen and (min-width: 1080px) {
+    .logo img {
+      width: 700px;
+      margin: 0 auto; } }
 
 #colophon {
   margin: 4.5rem 0 3rem; }
@@ -665,6 +694,11 @@ object {
       #colophon .site-info {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; } }
+    @media screen and (min-width: 1080px) {
+      #colophon .site-info {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
     #colophon .site-info p {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 100%;
