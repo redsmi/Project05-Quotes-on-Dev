@@ -34,7 +34,7 @@
 
 // My Stuff //
 .home.blog .entry-content {
-	margin-top: 3rem;
+	// margin-top: 3rem;
 	p {
 		font-size: 1.25rem;
 		@media screen and (min-width: 620px) {
@@ -48,5 +48,11 @@
 	h2 {
 		font-size: 1.25rem;
 		font-weight: normal;
+		margin-bottom	: 0;
+		display: inline;
+	}
+	.source {
+		font-style: italic;
+		font-size: 1.25rem;
 	}
 }

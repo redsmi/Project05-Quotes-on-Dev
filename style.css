@@ -233,7 +233,7 @@ th {
   font-family: 'Exo Web';
   src: url("../../fonts/Exo-MediumItalic.eot");
   src: url("../../fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../fonts/Exo-MediumItalic.woff") format("woff"), url("../../fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
-  font-weight: 500;
+  font-weight: 100;
   font-style: italic; }
 
 @font-face {
@@ -600,19 +600,22 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
-.home.blog .entry-content {
-  margin-top: 3rem; }
-  .home.blog .entry-content p {
-    font-size: 1.25rem; }
-    @media screen and (min-width: 620px) {
-      .home.blog .entry-content p {
-        font-size: 1.75rem; } }
+.home.blog .entry-content p {
+  font-size: 1.25rem; }
+  @media screen and (min-width: 620px) {
+    .home.blog .entry-content p {
+      font-size: 1.75rem; } }
 
 .home.blog .entry-meta {
   margin-bottom: 3rem; }
   .home.blog .entry-meta h2 {
     font-size: 1.25rem;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 0;
+    display: inline; }
+  .home.blog .entry-meta .source {
+    font-style: italic;
+    font-size: 1.25rem; }
 
 /*--------------------------------------------------------------
 # Media
