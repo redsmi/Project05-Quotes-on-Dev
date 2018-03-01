@@ -599,6 +599,17 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.home.blog .entry-content {
+  margin-top: 3rem; }
+  .home.blog .entry-content p {
+    font-size: 1.25rem; }
+
+.home.blog .entry-meta {
+  margin-bottom: 3rem; }
+  .home.blog .entry-meta h2 {
+    font-size: 1.25rem;
+    font-weight: normal; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -629,6 +640,7 @@ object {
   margin-top: 3rem; }
 
 .logo img {
+  display: block;
   width: 300px; }
 
 #colophon {
