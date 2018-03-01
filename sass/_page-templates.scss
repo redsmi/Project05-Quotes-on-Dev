@@ -1,6 +1,44 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.hfeed.site {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
+}
+
+.site-header {
+    margin-top: 3rem;
+}
+
+.logo img {
+    width: 300px;
+}
+
+// Footer //
+#colophon {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4.5rem 0 3rem;
+    .footer-navigation {
+        list-style: none;
+        display: inline-flex;
+        margin: 1rem 0 0 0;
+        padding: 0;
+        li {
+            padding: 0 1rem;
+            border-right: 1px solid #fff;
+            line-height: 1;
+        }
+        li:first-child {
+            padding-left: 0
+        }
+        li:last-child {
+            border-right: 0
+        }
+    }
+}
 
 /* All Archives Page */
 
