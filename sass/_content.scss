@@ -60,7 +60,8 @@
 }
 
 @media (min-width:1080px) {
-	.home.blog .site-content {
+	.home.blog .site-content,
+	.page-id-107 .site-content {
 		margin: 5rem 10rem 2rem;
 		position: relative;
 		#new-quote-button {
