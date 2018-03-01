@@ -25,6 +25,9 @@ input[type="submit"] {
 		color: $color__link-hover;
 		border-color: $color__link-hover;
 	}
+	@media screen and (min-width: 620px) {
+        font-size: 1.25rem;
+    }
 }
 
 /* Fields */

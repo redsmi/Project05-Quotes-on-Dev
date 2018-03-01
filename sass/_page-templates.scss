@@ -16,13 +16,29 @@
 .logo img {
     display: block;
     width: 300px;
+    @media screen and (min-width: 620px) {
+        width: 500px
+    }
 }
 
 // Footer //
 #colophon {
-    display: flex;
-    flex-wrap: wrap;
     margin: 4.5rem 0 3rem;
+    .site-info {
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (min-width: 620px) {
+            flex-wrap: nowrap;
+        }
+        p {
+            flex: 0 1 100%;
+            line-height: 1;
+            @media screen and (min-width: 620px) {
+                flex: 0 1 auto;
+                padding-left: 1rem
+            }
+        }
+    }
     .footer-navigation {
         list-style: none;
         display: inline-flex;
@@ -34,10 +50,13 @@
             line-height: 1;
         }
         li:first-child {
-            padding-left: 0
+            padding-left: 0;
         }
         li:last-child {
-            border-right: 0
+            border-right: 0;
+            @media screen and (min-width: 620px) {
+            border-right: 1px solid #fff;
+            }
         }
     }
 }

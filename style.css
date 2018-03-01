@@ -399,6 +399,12 @@ input[type="submit"] {
   input[type="submit"]:focus {
     color: #009900;
     border-color: #009900; }
+  @media screen and (min-width: 620px) {
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      font-size: 1.25rem; } }
 
 /* Fields */
 input[type="text"],
@@ -598,6 +604,9 @@ a {
   margin-top: 3rem; }
   .home.blog .entry-content p {
     font-size: 1.25rem; }
+    @media screen and (min-width: 620px) {
+      .home.blog .entry-content p {
+        font-size: 1.75rem; } }
 
 .home.blog .entry-meta {
   margin-bottom: 3rem; }
@@ -637,14 +646,33 @@ object {
 .logo img {
   display: block;
   width: 300px; }
+  @media screen and (min-width: 620px) {
+    .logo img {
+      width: 500px; } }
 
 #colophon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 4.5rem 0 3rem; }
+  #colophon .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media screen and (min-width: 620px) {
+      #colophon .site-info {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+    #colophon .site-info p {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 100%;
+              flex: 0 1 100%;
+      line-height: 1; }
+      @media screen and (min-width: 620px) {
+        #colophon .site-info p {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 auto;
+                  flex: 0 1 auto;
+          padding-left: 1rem; } }
   #colophon .footer-navigation {
     list-style: none;
     display: -webkit-inline-box;
@@ -660,6 +688,9 @@ object {
       padding-left: 0; }
     #colophon .footer-navigation li:last-child {
       border-right: 0; }
+      @media screen and (min-width: 620px) {
+        #colophon .footer-navigation li:last-child {
+          border-right: 1px solid #fff; } }
 
 /* All Archives Page */
 /* Submit a Quote Page */
