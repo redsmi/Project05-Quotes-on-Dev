@@ -644,7 +644,7 @@ a {
     content: "\f10e";
     right: -10rem; } }
 
-.entry-content {
+.home.blog .entry-content {
   margin-top: 3rem; }
 
 .page article {
