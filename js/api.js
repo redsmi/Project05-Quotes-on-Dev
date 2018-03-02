@@ -25,7 +25,8 @@
                     $('.source').html('');
                 }
                 // Push variable with slug to update URL with author name
-                history.pushState(null, null, 'hello');
+                var push_url = api_vars.home_url + "/" + post[0].slug; 
+                history.pushState(null, null, push_url);
             });
             
     });
