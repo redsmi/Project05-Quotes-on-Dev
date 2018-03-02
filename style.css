@@ -743,6 +743,7 @@ object {
           border-right: 1px solid #fff; } }
 
 /* All Archives Page */
+.page-id-111 .entry-title,
 .browse-archives .entry-header {
   margin-top: 3rem; }
 
@@ -775,16 +776,10 @@ object {
           align-items: center; }
 
 @media (min-width: 1080px) {
-  .page-id-113 .site-content,
-  .single-post .site-content,
-  .archive.category .site-content,
-  .archive.tag .site-content {
+  .site-content {
     margin: 5rem 10rem 2rem;
     position: relative; }
-    .page-id-113 .site-content #new-quote-button,
-    .single-post .site-content #new-quote-button,
-    .archive.category .site-content #new-quote-button,
-    .archive.tag .site-content #new-quote-button {
+    .site-content #new-quote-button {
       display: block;
       margin: 0 auto; }
   .site-content:before,

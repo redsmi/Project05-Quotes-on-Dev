@@ -69,6 +69,7 @@
 }
 
 /* All Archives Page */
+.page-id-111 .entry-title, //search page
 .browse-archives .entry-header {
     margin-top: 3rem;
 }
@@ -95,10 +96,7 @@
 }
 
 @media (min-width:1080px) {
-    .page-id-113 .site-content,
-    .single-post .site-content,
-    .archive.category .site-content,
-    .archive.tag .site-content {
+    .site-content {
 		margin: 5rem 10rem 2rem;
 		position: relative;
 		#new-quote-button {
@@ -127,7 +125,6 @@
 
 // Single Post
 .single-post .entry-content {
-	// margin-top: 3rem;
 	p {
 		font-size: 1.25rem;
 		@media screen and (min-width: 620px) {
