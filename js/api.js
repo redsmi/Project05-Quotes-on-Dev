@@ -1,9 +1,10 @@
 (function($){
-
+var lastPage = '';
 // fetch a random quote post
     $('#new-quote-button').on('click', function (event) {
         event.preventDefault();
         console.log('ajax workx');
+        lastPage = document.URL;
         // Grabbing a random post, https://css-tricks.com/using-the-wp-api-to-fetch-posts/
         var api_url = api_vars.root_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1';
 
@@ -28,26 +29,54 @@
                 var push_url = api_vars.home_url + "/" + post[0].slug; 
                 history.pushState(null, null, push_url);
 
-                // Revert to a previously saved state
-                // window.addEventListener('popstate', function(event) {
-                //     console.log('popstate fired!');
-                
-                //     updateContent(event.state);
-                // });
             });
-            
+            $(window).on('popstate', function() {
+                console.log("popstate fired!");
+                if (window.location.hash.indexOf('qm-overview or whatever') === 1) {
+                  return false;
+                }else {
+                  window.location.replace(lastPage);
+                }
+            });
     });
 // $('body').append('');
 
 
     $('.submit-quote').on('click', function (event) {
         event.preventDefault();
-
         $.ajax({
             method: 'post',
-            url: api_vars.root_url + 'wp/v2/posts/'
+            url: api_vars.root_url + 'wp/v2/posts/',
+            data: {
+                title: 'testing string',
+                _qod_quote_source: 'testing source'
+            },
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce );
+            }
+        }).done( function(data) {
+            console.log(data);
+            alert('Success! Comments are closed for this post.');
         });
     
     });
+
+
+    // $('#close-comments').on('click', function(event) {
+    //     event.preventDefault();
+    //     $.ajax({
+    //        method: 'post',
+    //        url: red_vars.rest_url + 'wp/v2/posts/' + red_vars.post_id,
+    //        data: {
+    //           comment_status: 'closed'
+    //        },
+    //        beforeSend: function(xhr) {
+    //           xhr.setRequestHeader( 'X-WP-Nonce', red_vars.wpapi_nonce );
+    //        }
+    //     }).done( function(response) {
+    //        alert('Success! Comments are closed for this post.');
+    //     });
+    //  });
+
 
 })(jQuery);
