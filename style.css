@@ -517,6 +517,12 @@ a {
   text-align: right;
   width: 50%; }
 
+.number-pagination {
+  margin-top: 3rem; }
+  .number-pagination a,
+  .number-pagination span {
+    padding-right: .5rem; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
