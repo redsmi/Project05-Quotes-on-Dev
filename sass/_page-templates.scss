@@ -95,7 +95,8 @@
 }
 
 @media (min-width:1080px) {
-	.page-id-113 .site-content {
+    .page-id-113 .site-content,
+    .single-post .site-content {
 		margin: 5rem 10rem 2rem;
 		position: relative;
 		#new-quote-button {
@@ -122,4 +123,29 @@
     }
 }
 
+.single-post .entry-content {
+	margin-top: 3rem;
+	p {
+		font-size: 1.25rem;
+		@media screen and (min-width: 620px) {
+			font-size: 1.75rem;
+		}
+		@media screen and (min-width: 1080px) {
+			font-size: 2.5rem;
+		}
+	}
+}
+.single-post .entry-meta {
+	margin-bottom: 3rem;
+	h2 {
+		font-size: 1.25rem;
+		font-weight: normal;
+		margin-bottom: 0;
+		display: inline;
+	}
+	.source {
+		font-style: italic;
+		font-size: 1.25rem;
+	}
+}
 /* Submit a Quote Page */

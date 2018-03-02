@@ -769,10 +769,12 @@ object {
           align-items: center; }
 
 @media (min-width: 1080px) {
-  .page-id-113 .site-content {
+  .page-id-113 .site-content,
+  .single-post .site-content {
     margin: 5rem 10rem 2rem;
     position: relative; }
-    .page-id-113 .site-content #new-quote-button {
+    .page-id-113 .site-content #new-quote-button,
+    .single-post .site-content #new-quote-button {
       display: block;
       margin: 0 auto; }
   .site-content:before,
@@ -789,5 +791,27 @@ object {
   .site-content:after {
     content: "\f10e";
     right: -10rem; } }
+
+.single-post .entry-content {
+  margin-top: 3rem; }
+  .single-post .entry-content p {
+    font-size: 1.25rem; }
+    @media screen and (min-width: 620px) {
+      .single-post .entry-content p {
+        font-size: 1.75rem; } }
+    @media screen and (min-width: 1080px) {
+      .single-post .entry-content p {
+        font-size: 2.5rem; } }
+
+.single-post .entry-meta {
+  margin-bottom: 3rem; }
+  .single-post .entry-meta h2 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-bottom: 0;
+    display: inline; }
+  .single-post .entry-meta .source {
+    font-style: italic;
+    font-size: 1.25rem; }
 
 /* Submit a Quote Page */
