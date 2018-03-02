@@ -40,4 +40,14 @@
 // $('body').append('');
 
 
+    $('.submit-quote').on('click', function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            method: 'post',
+            url: api_vars.root_url + 'wp/v2/posts/'
+        });
+    
+    });
+
 })(jQuery);
