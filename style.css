@@ -792,16 +792,14 @@ object {
     content: "\f10e";
     right: -10rem; } }
 
-.single-post .entry-content {
-  margin-top: 3rem; }
-  .single-post .entry-content p {
-    font-size: 1.25rem; }
-    @media screen and (min-width: 620px) {
-      .single-post .entry-content p {
-        font-size: 1.75rem; } }
-    @media screen and (min-width: 1080px) {
-      .single-post .entry-content p {
-        font-size: 2.5rem; } }
+.single-post .entry-content p {
+  font-size: 1.25rem; }
+  @media screen and (min-width: 620px) {
+    .single-post .entry-content p {
+      font-size: 1.75rem; } }
+  @media screen and (min-width: 1080px) {
+    .single-post .entry-content p {
+      font-size: 2.5rem; } }
 
 .single-post .entry-meta {
   margin-bottom: 3rem; }
