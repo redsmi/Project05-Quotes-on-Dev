@@ -429,7 +429,8 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  width: 60%; }
 
 textarea {
   padding-left: 3px;
