@@ -50,7 +50,7 @@
 	h2 {
 		font-size: 1.25rem;
 		font-weight: normal;
-		margin-bottom	: 0;
+		margin-bottom: 0;
 		display: inline;
 	}
 	.source {
@@ -76,7 +76,7 @@
 		font-size: 7rem;
 		line-height: 7rem;
         position: absolute;
-        top: 0
+        top: 0;
     }
     .site-content:before {
         content: "\f10d";
@@ -86,4 +86,11 @@
         content: "\f10e";
         right: -10rem;
     }
+}
+
+.entry-content {
+	margin-top: 3rem;
+}
+.page article {
+	margin-top: 3rem;
 }

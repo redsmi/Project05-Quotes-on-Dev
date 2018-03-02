@@ -4,7 +4,16 @@
     $('#new-quote-button').on('click', function (event) {
         event.preventDefault();
         console.log('ajax workx');
+        // Grabbing a random post, https://css-tricks.com/using-the-wp-api-to-fetch-posts/
+        var api_url = api_vars.root_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1';
 
+        $.ajax({
+            method: 'get',
+            url: api_url
+          }).done( function(post) {
+            // alert('Success test');
+            console.log('got the get');
+          });
     });
 // $('body').append('');
 
