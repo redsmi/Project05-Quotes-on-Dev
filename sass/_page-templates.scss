@@ -75,7 +75,7 @@
 
 .post-archives ul,
 .category-archives ul,
-.tag ul {
+.tags ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
@@ -83,9 +83,43 @@
     display: flex;
     flex-wrap: wrap;
     li {
-        font-size: 1.25rem;
         margin-right: 1.1rem;
         margin-bottom: 0.5rem;
+        @media screen and (min-width: 620px) {
+            font-size: 1.25rem;
+        }
     }
 }
+.tags ul {
+    align-items: center;
+}
+
+@media (min-width:1080px) {
+	.page-id-113 .site-content {
+		margin: 5rem 10rem 2rem;
+		position: relative;
+		#new-quote-button {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.site-content:before,
+	.site-content:after {
+		font-family: FontAwesome;
+		color: #0c0;
+		font-size: 7rem;
+		line-height: 7rem;
+        position: absolute;
+        top: 0;
+    }
+    .site-content:before {
+        content: "\f10d";
+        left: -10rem;	
+    }
+    .site-content:after {
+        content: "\f10e";
+        right: -10rem;
+    }
+}
+
 /* Submit a Quote Page */

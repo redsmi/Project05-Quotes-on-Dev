@@ -742,7 +742,7 @@ object {
 
 .post-archives ul,
 .category-archives ul,
-.tag ul {
+.tags ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -754,9 +754,40 @@ object {
       flex-wrap: wrap; }
   .post-archives ul li,
   .category-archives ul li,
-  .tag ul li {
-    font-size: 1.25rem;
+  .tags ul li {
     margin-right: 1.1rem;
     margin-bottom: 0.5rem; }
+    @media screen and (min-width: 620px) {
+      .post-archives ul li,
+      .category-archives ul li,
+      .tags ul li {
+        font-size: 1.25rem; } }
+
+.tags ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media (min-width: 1080px) {
+  .page-id-113 .site-content {
+    margin: 5rem 10rem 2rem;
+    position: relative; }
+    .page-id-113 .site-content #new-quote-button {
+      display: block;
+      margin: 0 auto; }
+  .site-content:before,
+  .site-content:after {
+    font-family: FontAwesome;
+    color: #0c0;
+    font-size: 7rem;
+    line-height: 7rem;
+    position: absolute;
+    top: 0; }
+  .site-content:before {
+    content: "\f10d";
+    left: -10rem; }
+  .site-content:after {
+    content: "\f10e";
+    right: -10rem; } }
 
 /* Submit a Quote Page */
