@@ -96,7 +96,9 @@
 
 @media (min-width:1080px) {
     .page-id-113 .site-content,
-    .single-post .site-content {
+    .single-post .site-content,
+    .archive.category .site-content,
+    .archive.tag .site-content {
 		margin: 5rem 10rem 2rem;
 		position: relative;
 		#new-quote-button {
@@ -163,6 +165,12 @@
     }
     .entry-content p {
         font-size: 1.25rem;
+        @media screen and (min-width: 620px) {
+			font-size: 1.75rem;
+		}
+		@media screen and (min-width: 1080px) {
+			font-size: 2.5rem;
+		}
     }
     .entry-meta {
         margin-bottom: 3rem;

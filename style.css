@@ -770,11 +770,15 @@ object {
 
 @media (min-width: 1080px) {
   .page-id-113 .site-content,
-  .single-post .site-content {
+  .single-post .site-content,
+  .archive.category .site-content,
+  .archive.tag .site-content {
     margin: 5rem 10rem 2rem;
     position: relative; }
     .page-id-113 .site-content #new-quote-button,
-    .single-post .site-content #new-quote-button {
+    .single-post .site-content #new-quote-button,
+    .archive.category .site-content #new-quote-button,
+    .archive.tag .site-content #new-quote-button {
       display: block;
       margin: 0 auto; }
   .site-content:before,
@@ -825,6 +829,14 @@ object {
 .archive.category .entry-content p,
 .archive.tag .entry-content p {
   font-size: 1.25rem; }
+  @media screen and (min-width: 620px) {
+    .archive.category .entry-content p,
+    .archive.tag .entry-content p {
+      font-size: 1.75rem; } }
+  @media screen and (min-width: 1080px) {
+    .archive.category .entry-content p,
+    .archive.tag .entry-content p {
+      font-size: 2.5rem; } }
 
 .archive.category .entry-meta,
 .archive.tag .entry-meta {
