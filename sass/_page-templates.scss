@@ -194,3 +194,21 @@
         margin-bottom: 0.5rem;
     }
 }
+
+// Error 404 //
+.error404 {
+    fieldset {
+        border:none;
+    }
+    .search-field {
+        width: 15rem;
+        margin-right: 0.5rem;
+        @media screen and (min-width: 620px) {
+			font-size: 1.25rem;
+		}
+    }
+    .search-submit {
+        border:none;
+        padding: 0;
+    }
+}

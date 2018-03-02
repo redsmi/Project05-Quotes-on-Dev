@@ -27,6 +27,13 @@
                 // Push variable with slug to update URL with author name
                 var push_url = api_vars.home_url + "/" + post[0].slug; 
                 history.pushState(null, null, push_url);
+
+                // Revert to a previously saved state
+                // window.addEventListener('popstate', function(event) {
+                //     console.log('popstate fired!');
+                
+                //     updateContent(event.state);
+                // });
             });
             
     });

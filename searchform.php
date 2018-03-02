@@ -1,14 +1,14 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 	<fieldset>
-		<label>
+		<!-- <label> -->
 			<input type="search" class="search-field" 
 			placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
-		</label>
+		<!-- </label> -->
 		<button class="search-submit">
-			<?php echo esc_html( 'Search edit' ); ?>
-			<span class="icon-search">
+			<!-- <?php echo esc_html( 'Search edit' ); ?> -->
+			<!-- <span class="icon-search"> -->
 				<i class="fa fa-search"></i>
-			</span>
+			<!-- </span> -->
 		</button>
 	</fieldset>
 </form>

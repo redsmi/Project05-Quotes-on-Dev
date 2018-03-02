@@ -866,3 +866,17 @@ object {
   margin-bottom: 1.5rem; }
   .quote-content label {
     margin-bottom: 0.5rem; }
+
+.error404 fieldset {
+  border: none; }
+
+.error404 .search-field {
+  width: 15rem;
+  margin-right: 0.5rem; }
+  @media screen and (min-width: 620px) {
+    .error404 .search-field {
+      font-size: 1.25rem; } }
+
+.error404 .search-submit {
+  border: none;
+  padding: 0; }
