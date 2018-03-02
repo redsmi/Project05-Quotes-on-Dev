@@ -413,8 +413,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  background-color: #222222;
+  border: 2px solid #00cc00;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -422,7 +422,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    border: 2px solid silver; }
 
 input[type="text"],
 input[type="email"],
@@ -854,3 +854,14 @@ object {
     font-size: 1.25rem; }
 
 /* Submit a Quote Page */
+.quote-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.5rem; }
+  .quote-content label {
+    margin-bottom: 0.5rem; }

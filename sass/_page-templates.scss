@@ -186,3 +186,11 @@
 
 
 /* Submit a Quote Page */
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    label {
+        margin-bottom: 0.5rem;
+    }
+}

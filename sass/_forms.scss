@@ -38,12 +38,13 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
+	background-color: $color__background-body;
+	border: 2px solid $color__green-brand;
 	border-radius: 3px;
 
 	&:focus {
-		color: #111;
+		border: 2px solid silver;
+		;
 	}
 }
 
