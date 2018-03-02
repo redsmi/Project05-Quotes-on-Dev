@@ -150,9 +150,34 @@
 	}
 }
 
-// Category
-
-// Tag
+// Archive Category and Tag
+.archive.category,
+.archive.tag {
+    .page-title {
+        margin-top: 3rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dotted #fff;
+    }
+    article {
+        border-bottom: 1px dotted #fff;
+    }
+    .entry-content p {
+        font-size: 1.25rem;
+    }
+    .entry-meta {
+        margin-bottom: 3rem;
+        .entry-title {
+            font-weight: normal;
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            display: inline;
+        }
+        .source {
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+    }
+}
 
 
 /* Submit a Quote Page */

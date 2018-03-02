@@ -12,7 +12,7 @@
             url: api_url
             }).done( function(post) {
                 // alert('Success test');
-                console.log('got the gggget');
+                console.log('got the get');
                 $('.entry-title').text(post[0].title.rendered); //Author name, just string
                 $('.entry-content').html(post[0].content.rendered); //Quote, includes <p> tags
                 // Conditional quote source and source url, strings

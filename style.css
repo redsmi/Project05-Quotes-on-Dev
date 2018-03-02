@@ -812,4 +812,32 @@ object {
     font-style: italic;
     font-size: 1.25rem; }
 
+.archive.category .page-title,
+.archive.tag .page-title {
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted #fff; }
+
+.archive.category article,
+.archive.tag article {
+  border-bottom: 1px dotted #fff; }
+
+.archive.category .entry-content p,
+.archive.tag .entry-content p {
+  font-size: 1.25rem; }
+
+.archive.category .entry-meta,
+.archive.tag .entry-meta {
+  margin-bottom: 3rem; }
+  .archive.category .entry-meta .entry-title,
+  .archive.tag .entry-meta .entry-title {
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    display: inline; }
+  .archive.category .entry-meta .source,
+  .archive.tag .entry-meta .source {
+    font-style: italic;
+    font-size: 1.25rem; }
+
 /* Submit a Quote Page */
