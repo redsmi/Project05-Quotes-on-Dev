@@ -10,10 +10,21 @@
         $.ajax({
             method: 'get',
             url: api_url
-          }).done( function(post) {
-            // alert('Success test');
-            console.log('got the get');
-          });
+            }).done( function(post) {
+                // alert('Success test');
+                console.log('got the gggget');
+                $('.entry-title').text(post[0].title.rendered); //Author name, just string
+                $('.entry-content').html(post[0].content.rendered); //Quote, includes <p> tags
+                // Conditional quote source and source url, strings
+                if (post[0]._qod_quote_source && post[0]._qod_quote_source_url) {
+                    $('.source').html('<a>' + post[0]._qod_quote_source + '</a>');
+                    $('.source a').attr('href', post[0]._qod_quote_source_url);
+                } else if (post[0]._qod_quote_source) {
+                    $('.source').html(post[0]._qod_quote_source);
+                } else {
+                    $('.source').html('');
+                }
+            });
     });
 // $('body').append('');
 
