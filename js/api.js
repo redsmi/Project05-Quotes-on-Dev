@@ -17,10 +17,10 @@
                 $('.entry-content').html(post[0].content.rendered); //Quote, includes <p> tags
                 // Conditional quote source and source url, strings
                 if (post[0]._qod_quote_source && post[0]._qod_quote_source_url) {
-                    $('.source').html('<a>' + post[0]._qod_quote_source + '</a>');
+                    $('.source').html(', <a>' + post[0]._qod_quote_source + '</a>');
                     $('.source a').attr('href', post[0]._qod_quote_source_url);
                 } else if (post[0]._qod_quote_source) {
-                    $('.source').html(post[0]._qod_quote_source);
+                    $('.source').html(', ' + post[0]._qod_quote_source);
                 } else {
                     $('.source').html('');
                 }
