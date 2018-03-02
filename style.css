@@ -867,16 +867,25 @@ object {
   .quote-content label {
     margin-bottom: 0.5rem; }
 
-.error404 fieldset {
+.error404 fieldset,
+.search fieldset {
   border: none; }
 
-.error404 .search-field {
+.error404 .search-field,
+.search .search-field {
   width: 15rem;
   margin-right: 0.5rem; }
   @media screen and (min-width: 620px) {
-    .error404 .search-field {
+    .error404 .search-field,
+    .search .search-field {
       font-size: 1.25rem; } }
 
-.error404 .search-submit {
+.error404 .search-submit,
+.search .search-submit {
   border: none;
   padding: 0; }
+
+.search-results .page-title {
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted #fff; }

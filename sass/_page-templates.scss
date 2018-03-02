@@ -195,8 +195,9 @@
     }
 }
 
-// Error 404 //
-.error404 {
+// Error 404 // and no search match
+.error404,
+.search {
     fieldset {
         border:none;
     }
@@ -210,5 +211,14 @@
     .search-submit {
         border:none;
         padding: 0;
+    }
+}
+
+// Search Results //
+.search-results {
+    .page-title {
+        margin-top: 3rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dotted #fff;
     }
 }
