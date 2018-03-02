@@ -600,14 +600,16 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
-.home.blog .entry-content p {
-  font-size: 1.25rem; }
-  @media screen and (min-width: 620px) {
-    .home.blog .entry-content p {
-      font-size: 1.75rem; } }
-  @media screen and (min-width: 1080px) {
-    .home.blog .entry-content p {
-      font-size: 2.5rem; } }
+.home.blog .entry-content {
+  margin-top: 3rem; }
+  .home.blog .entry-content p {
+    font-size: 1.25rem; }
+    @media screen and (min-width: 620px) {
+      .home.blog .entry-content p {
+        font-size: 1.75rem; } }
+    @media screen and (min-width: 1080px) {
+      .home.blog .entry-content p {
+        font-size: 2.5rem; } }
 
 .home.blog .entry-meta {
   margin-bottom: 3rem; }
@@ -619,6 +621,9 @@ a {
   .home.blog .entry-meta .source {
     font-style: italic;
     font-size: 1.25rem; }
+
+.page article {
+  margin-top: 3rem; }
 
 @media (min-width: 1080px) {
   .home.blog .site-content,
@@ -643,12 +648,6 @@ a {
   .site-content:after {
     content: "\f10e";
     right: -10rem; } }
-
-.home.blog .entry-content {
-  margin-top: 3rem; }
-
-.page article {
-  margin-top: 3rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -738,4 +737,26 @@ object {
           border-right: 1px solid #fff; } }
 
 /* All Archives Page */
+.browse-archives .entry-header {
+  margin-top: 3rem; }
+
+.post-archives ul,
+.category-archives ul,
+.tag ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-archives ul li,
+  .category-archives ul li,
+  .tag ul li {
+    font-size: 1.25rem;
+    margin-right: 1.1rem;
+    margin-bottom: 0.5rem; }
+
 /* Submit a Quote Page */

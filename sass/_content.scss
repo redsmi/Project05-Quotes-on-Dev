@@ -33,7 +33,9 @@
 }
 
 // My Stuff //
+// Home //
 .home.blog .entry-content {
+	margin-top: 3rem;
 	p {
 		font-size: 1.25rem;
 		@media screen and (min-width: 620px) {
@@ -59,6 +61,12 @@
 	}
 }
 
+// About //
+.page article {
+	margin-top: 3rem;
+}
+
+// Home and About //
 @media (min-width:1080px) {
 	.home.blog .site-content,
 	.page-id-107 .site-content {
@@ -86,11 +94,4 @@
         content: "\f10e";
         right: -10rem;
     }
-}
-
-.home.blog .entry-content {
-	margin-top: 3rem;
-}
-.page article {
-	margin-top: 3rem;
 }

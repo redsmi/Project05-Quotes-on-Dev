@@ -16,7 +16,7 @@ get_header(); ?>
                 <h1><?php the_title();?></h1>
             </header>
             
-            <div class="post-archives">
+            <div class="post-archives clearfix">
                 <h2>Quote Authors</h2>
                 <ul>
                 <?php
@@ -31,14 +31,14 @@ get_header(); ?>
             </div><!-- .post-archives -->
 
 
-            <div class="category-archives">
+            <div class="category-archives clearfix">
                 <h2>Categories</h2>
                 <ul>
                     <?php wp_list_categories( 'title_li=' ); ?>
                 </ul>
             </div>
 
-            <div class="tags">
+            <div class="tags clearfix">
                 <h2>Tags</h2>
                 <?php wp_tag_cloud(  
                     array(
