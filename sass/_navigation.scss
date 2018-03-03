@@ -62,15 +62,6 @@ a {
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
@@ -80,9 +71,6 @@ a {
 		float: left;
 		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 	a {
 		display: block;

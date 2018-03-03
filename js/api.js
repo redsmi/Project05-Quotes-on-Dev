@@ -1,6 +1,6 @@
 (function($){
 var lastPage = '';
-// fetch a random quote post
+    // fetch a random quote post
     $('#new-quote-button').on('click', function (event) {
         event.preventDefault();
         console.log('ajax workx');
@@ -12,8 +12,6 @@ var lastPage = '';
             method: 'get',
             url: api_url
             }).done( function(post) {
-                // alert('Success test');
-                console.log('got the get');
                 $('.entry-title').text(post[0].title.rendered); //Author name, just string
                 $('.entry-content').html(post[0].content.rendered); //Quote, includes <p> tags
                 // Conditional quote source and source url, strings
@@ -32,51 +30,35 @@ var lastPage = '';
             });
             $(window).on('popstate', function() {
                 console.log("popstate fired!");
-                if (window.location.hash.indexOf('qm-overview or whatever') === 1) {
+                if (window.location.hash.indexOf('qm-overview ') === 1) {
                   return false;
-                }else {
+                } else {
                   window.location.replace(lastPage);
                 }
             });
-    });
-// $('body').append('');
+    }); // End new quote button
 
 
+    // Submit a quote
     $('.submit-quote').on('click', function (event) {
         event.preventDefault();
         $.ajax({
             method: 'post',
             url: api_vars.root_url + 'wp/v2/posts/',
             data: {
-                title: 'testing string',
-                _qod_quote_source: 'testing source'
+                title: $('#quote-author').val(),
+                content: $('#quote-the-quote').val(),
+                _qod_quote_source: $('#quote-source').val(),
+                _qod_quote_source_url: $('#quote-source-url').val(),
             },
             beforeSend: function(xhr) {
                 xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce );
             }
         }).done( function(data) {
-            console.log(data);
-            alert('Success! Comments are closed for this post.');
+            alert(api_vars.success);
+            console.log(api_vars.success);
         });
-    
-    });
+    }); // End submit quote button
 
-
-    // $('#close-comments').on('click', function(event) {
-    //     event.preventDefault();
-    //     $.ajax({
-    //        method: 'post',
-    //        url: red_vars.rest_url + 'wp/v2/posts/' + red_vars.post_id,
-    //        data: {
-    //           comment_status: 'closed'
-    //        },
-    //        beforeSend: function(xhr) {
-    //           xhr.setRequestHeader( 'X-WP-Nonce', red_vars.wpapi_nonce );
-    //        }
-    //     }).done( function(response) {
-    //        alert('Success! Comments are closed for this post.');
-    //     });
-    //  });
-
-
+// $('body').append('');
 })(jQuery);
