@@ -867,6 +867,9 @@ object {
   .quote-content label {
     margin-bottom: 0.5rem; }
 
+.quote-submit-wrapper .entry-title p {
+  font-size: 1.25rem; }
+
 .error404 fieldset,
 .search fieldset {
   border: none; }

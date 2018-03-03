@@ -55,8 +55,9 @@ var lastPage = '';
                 xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce );
             }
         }).done( function(data) {
-            alert(api_vars.success);
             console.log(api_vars.success);
+            $('#quote-submit-form').hide({duration:300});
+            $('.quote-submit-wrapper .entry-title').append('<p>' + api_vars.success + '</p>');
         });
     }); // End submit quote button
 
