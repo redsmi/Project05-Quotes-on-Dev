@@ -20,7 +20,13 @@ Javascript, jQuery, AJAX – <br />
 2. Make a POST request to a WP API endpoint using Ajax to submit a new quote to the quote to the site<br />
 3. Clear the quote submission form and show an affirmative message when a quote is successfully submitted to the database<br />
 4. Show an error message when a quote is not successfully submitted to the database<br />
-PHP – The language of WordPress. PHP built-in functions, variables, arrays, loops, including, to create page templates, following the Wordpress Template Heiarchy. PHP files generate the site on the server (with the help of the Apache web server) so it can be rendered as HTML in the browser. Used to get data out the database and populate the website with it. Used along with Wordpress built-in functions to retrieve and output desired data. Hooks, Actions, Filters.
+
+PHP – The language of WordPress. PHP built-in functions, variables, arrays, loops, including, to create page templates, following the Wordpress Template Heiarchy. PHP files generate the site on the server (with the help of the Apache web server) so it can be rendered as HTML in the browser. Used along with Wordpress built-in functions to retrieve and output desired data. Hooks, Actions, Filters.<br />
+1. Submit a Quote page display conditional if user is logged in and can edit posts<br />
+2. Check if WordPress REST URL exists, then enqueue site scripts<br />
+3. Localize a script (REST URL), using REST API nonce, to pass data to JavaScript<br />
+4. Change the placeholder text in the back-end post editing<br />
+5. Filter different pages to display different (1, 5, 10) items per page<br />
 
 ### WordPress back-end/dashboard, plugins: 
 Select/utilize the desired custom theme directory<br />
