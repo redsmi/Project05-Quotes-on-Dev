@@ -1,23 +1,29 @@
-# Quotes on Dev Starter
+# Quotes on Dev
+Inspired by quotesondesign.com, Quotes on Dev is a website that uses WordPress REST API to display posts of programming quotes.
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+## Pages and functions:
+A Homepage that displays an initial random post/quote.<br />
+A button to fetch additional random posts on the front page using the WP API. Updates the URL and popstates.<br />
+A blog post index page and a single view for blog posts.<br />
+An About page and an Archives page sorting posts by Author, Categories, and Tags.<br />
+A Submit a Quote page that accepts new quote submissions from the front-end of the site using WP API (for logged in users only), and sets those submissions to Draft by default. Displays a response for successful/unsuccessful submission.<br />
+A 404 page with a search form, a Search Results page.<br />
+All pages responsiveley designed using a mobile-first approach.<br />
 
-## Installation
+## Technologies used:
 
-### 1. Download me (don't clone me!)
+MAMP – To install a local server environment in order to install and use WordPress.<br />
+Node modules and Gulp – For running build tasks such as browser sync, code error checking, converting SASS to CSS, code minification.<br />
+HTML, SASS/CSS – Structure and style website for mobile, tablet, and desktop view.<br />
+Javascript, jQuery, AJAX – <br />
+1. Make a GET request to a WP API endpoint using Ajax to dynamically add a new quote to the front page, and corresponding update the URL using the History API<br />
+2. Make a POST request to a WP API endpoint using Ajax to submit a new quote to the quote to the site<br />
+3. Clear the quote submission form and show an affirmative message when a quote is successfully submitted to the database<br />
+4. Show an error message when a quote is not successfully submitted to the database<br />
+PHP – The language of WordPress. PHP built-in functions, variables, arrays, loops, including, to create page templates, following the Wordpress Template Heiarchy. PHP files generate the site on the server (with the help of the Apache web server) so it can be rendered as HTML in the browser. Used to get data out the database and populate the website with it. Used along with Wordpress built-in functions to retrieve and output desired data. Hooks, Actions, Filters.
 
-Then add me to your `wp-content/themes` directory.
+### WordPress back-end/dashboard, plugins: 
+Select/utilize the desired custom theme directory<br />
+Structure the Menu that will be fixed at the bottom of each page<br />
+WordPress importer plugin - To import an XML file to populate the site with content<br />
 
-### 2. Rename the `quotesondev-starter-master` directory
-
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)

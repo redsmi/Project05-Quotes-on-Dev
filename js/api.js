@@ -3,7 +3,6 @@ var lastPage = '';
     // fetch a random quote post
     $('#new-quote-button').on('click', function (event) {
         event.preventDefault();
-        console.log('ajax workx');
         lastPage = document.URL;
         // Grabbing a random post, https://css-tricks.com/using-the-wp-api-to-fetch-posts/
         var api_url = api_vars.root_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1';
@@ -24,12 +23,12 @@ var lastPage = '';
                     $('.source').html('');
                 }
                 // Push variable with slug to update URL with author name
-                var push_url = api_vars.home_url + "/" + post[0].slug; 
+                var push_url = api_vars.home_url + '/' + post[0].slug; 
                 history.pushState(null, null, push_url);
 
             });
             $(window).on('popstate', function() {
-                console.log("popstate fired!");
+                // console.log("popstate fired!");
                 if (window.location.hash.indexOf('qm-overview ') === 1) {
                   return false;
                 } else {
@@ -55,9 +54,14 @@ var lastPage = '';
                 xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce );
             }
         }).done( function(data) {
-            console.log(api_vars.success);
+            $('#quote-author').val('');
+            $('#quote-the-quote').val('');
+            $('#quote-source').val('');
+            $('#quote-source-url').val('');
             $('#quote-submit-form').hide({duration:300});
             $('.quote-submit-wrapper .entry-title').append('<p>' + api_vars.success + '</p>');
+        }).fail(function () {
+            $('.quote-submit-wrapper .entry-title').append('<p>' + api_vars.failure + '</p>');
         });
     }); // End submit quote button
 
